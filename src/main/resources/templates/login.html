@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+      
+                <div class="form">
+                    <div class="avi"></div>
+            <form  th:action="@{/login}" method="POST">
+                <label for="username">Username: </label>
+                <input type="text" name="username" onfocus=" value = '';"  id="username"/>
+                <label for="password">Password: </label>
+                <input type="password" name="password"  onfocus="this.value = '';" id="password"/>
+                <input type="submit" value="Login">
+            </form>
+        </div><!--form-->
+        <div class="recovery">Forgot your password? <a href="#">Click here</a></div>
+
+     
+    </body>
+</html>
